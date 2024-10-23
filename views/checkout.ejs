@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/stylesheets/css/style.css' />
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="flex-container">
+            <div class="logo">
+                <a href="/"><img id="tophead" src="/img/logo.png" alt="logo"></a>
+            </div>
+
+
+            <div class="search-bar" id="lastitem">
+                <input id="sokruta" type="text" placeholder="Sök">
+            </div>
+
+            <div class="icons">
+                <a href="checkout"><i class='bx bxs-shopping-bag'></i></a>
+                <a href="product-details"><i class='bx bxs-heart'></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="default.asp">Nyheter</a></li>
+            <li><a href="news.asp">Topplistan</a></li>
+            <li><a href="contact.asp">Rea</a></li>
+            <li><a href="about.asp">Kampanjer</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1 class="kassan">Kassan</h1>
+            <div class="table">
+                <div class="tr extra-row"> <!-- visas endast i 640px+ -->
+                    <div class="td td-0">Antal</div>
+                    <div class="td td-1">Produkt</div>
+                    <div class="td td-2">Totalt</div>
+                    <div class="td td-3">Pris</div>
+                </div>
+                <div class="tr tr-1">
+                    <div class="td td-0">1<span>x</span></div>
+                    <div class="td td-1">Svart T-shirt</div>
+                    <div class="td td-2">199SEK</div>
+                    <div class="td td-3">199SEK</div>
+                </div>
+                <div class="tr tr-2">
+                    <div class="td td-0">2<span>x</span></div>
+                    <div class="td td-1">Vit T-shirt</div>
+                    <div class="td td-2">398SEK</div>
+                    <div class="td td-3">199SEK</div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <h2 class="kunduppgifter">Kunduppgifter</h2>
+
+        <form class="checkout">
+            <div class="form-container">
+                <div class="input-group grp-1">
+                    <label for="first-name">Namn</label>
+
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <br>
+                <div class="input-group grp-2">
+                    <label for="last-name">Efternamn</label>
+
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <br>
+                <div class="input-group grp-3">
+                    <label for="email">E-post</label>
+
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <fieldset class="checkout-form">
+                <legend>Adress</legend>
+                <br>
+                <label for="gata">Gata</label>
+                <br>
+                <input type="text" id="gata" name="gata" required>
+                <br>
+                <label for="post-nummer">Postnummer</label>
+                <br>
+                <input type="number" id="post-nummer" name="post-nummer" required>
+                <br>
+                <label for="stad">Stad</label>
+                <br>
+                <input type="text" id="stad" name="stad" required>
+                <br>
+                <br>
+            </fieldset>
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                Jag vill ta emot nyhetsbrev
+            </label>
+            <br>
+            <br>
+            <button class="buy">Köp</button>
+        </form>
+
+
+
+
+    </main>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <i class='bx bx-globe'></i>
+            <p>Gratis Frakt och Returer</p>
+        </div>
+        <div class="grid-item">
+            <i class='bx bxs-plane-take-off'></i>
+            <p>Expressfrakt</p>
+        </div>
+        <div class="grid-item">
+            <i class='bx bx-check-shield'></i>
+            <p>Säkra Betalningar</p>
+        </div>
+        <div class="grid-item">
+            <i class='bx bx-smile'></i>
+            <p>Nyheter varje dag</p>
+        </div>
+    </div>
+
+    <!-- Accordion under -->
+
+    <footer>
+
+        <div class="accordion">
+            <details open>
+                <summary class="accord1">Shopping</summary>
+                <p>Vinterjackor</p>
+                <p>Pufferjackor</p>
+                <p>Kappa</p>
+                <p>Trenchcoats</p>
+            </details>
+            <details open>
+                <summary class="accord2">Mina Sidor</summary>
+                <p>Mina Ordrar</p>
+                <p>Mitt Konto</p>
+
+            </details>
+            <details open>
+                <summary class="accord3">Kundtjänst</summary>
+                <p>Returnpolicy</p>
+                <p>Integritetspolicy</p>
+            </details>
+        </div>
+
+        <p id="copyright">&copy; Freaky Fashion</p>
+
+
+    </footer>
+</body>
+
+</html>

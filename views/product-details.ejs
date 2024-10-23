@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/stylesheets/css/style.css' />
+    <title>Product Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<!-- "https://placehold.co/400x200" -->
+
+<body>
+    <header>
+        <div class="flex-container">
+
+            <div class="logo">
+                <a href="/"><img id="tophead" src="/img/logo.png" alt="logo"></a>
+            </div>
+
+
+
+
+            <div class="search-bar" id="lastitem">
+                <input id="sokruta" type="text" placeholder="Sök">
+            </div>
+
+            <div class="icons">
+                <a href="checkout"><i class='bx bxs-shopping-bag'></i></a>
+                <a href="product-details"><i class='bx bxs-heart'></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li><a href="nyheter">Nyheter</a></li>
+                <li><a href="topplistan">Topplistan</a></li>
+                <li><a href="rea">Rea</a></li>
+                <li><a href="kampanjer">Kampanjer</a></li>
+            </ul>
+        </nav>
+
+        <div class="productcard">
+            <div class="product1"><img id="prodpic" src="https://placehold.co/300x450" alt="Hero bild" width="300"
+                    height="450"><a class="produktikon2" href=""><i class='bx bx-heart'></i></a></div>
+            <div class="product2">
+                <p>Svart T-shirt</p>
+                <br>
+                <p>Levis</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia facere eius doloremque repellat illum
+                    hic corrupti, veritatis eligendi!</p>
+                <br>
+                <p>199 SEK</p>
+                <br>
+                <button class="prodknapp">Lägg i varukorg</button>
+            </div>
+        </div>
+
+
+
+        <!-- PRODUCT CARD 3X -->
+
+
+
+        <div class="slider">
+            <div class="slidertext">
+                <p>Liknande produkter</p>
+            </div>
+
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+
+            <div class="slides">
+                <!-- SLIDE 1 -->
+                <div class="slide">
+                    <a href="#link1"><img src="https://placehold.co/300x400" alt="Bild 1"></a>
+                    <a href="#link2"><img src="https://placehold.co/300x400" alt="Bild 2"></a>
+                    <a href="#link3"><img src="https://placehold.co/300x400" alt="Bild 3"></a>
+                </div>
+                <!-- SLIDE 2 -->
+                <div class="slide">
+                    <a href="#link4"><img src="https://placehold.co/300x400" alt="Bild 4"></a>
+                    <a href="#link5"><img src="https://placehold.co/300x400" alt="Bild 5"></a>
+                    <a href="#link6"><img src="https://placehold.co/300x400" alt="Bild 6"></a>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <a href="#link7"><img src="https://placehold.co/300x400" alt="Bild 7"></a>
+                    <a href="#link8"><img src="https://placehold.co/300x400" alt="Bild 8"></a>
+                    <a href="#link9"><img src="https://placehold.co/300x400" alt="Bild 9"></a>
+                </div>
+            </div>
+
+            <!-- NAVIGERINGSKNAPPAR -->
+            <div class="nav-container">
+                <label for="slide1" class="nav"></label>
+                <label for="slide2" class="nav"></label>
+                <label for="slide3" class="nav"></label>
+            </div>
+        </div>
+
+
+
+        <!-- PRODUCT CARD 3X -->
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <i class='bx bx-globe'></i>
+                <p>Gratis Frakt och Returer</p>
+            </div>
+            <div class="grid-item">
+                <i class='bx bxs-plane-take-off'></i>
+                <p>Expressfrakt</p>
+            </div>
+            <div class="grid-item">
+                <i class='bx bx-check-shield'></i>
+                <p>Säkra Betalningar</p>
+            </div>
+            <div class="grid-item">
+                <i class='bx bx-smile'></i>
+                <p>Nyheter varje dag</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+
+        <div class="accordion">
+            <details open>
+                <summary class="accord1">Shopping</summary>
+                <p>Vinterjackor</p>
+                <p>Pufferjackor</p>
+                <p>Kappa</p>
+                <p>Trenchcoats</p>
+            </details>
+            <details open>
+                <summary class="accord2">Mina Sidor</summary>
+                <p>Mina Ordrar</p>
+                <p>Mitt Konto</p>
+
+            </details>
+            <details open>
+                <summary class="accord3">Kundtjänst</summary>
+                <p>Returnpolicy</p>
+                <p>Integritetspolicy</p>
+            </details>
+        </div>
+
+        <p id="copyright">&copy; Freaky Fashion</p>
+    </footer>
+
+
+
+</body>
+
+</html>
